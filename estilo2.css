@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  background: linear-gradient(135deg, #f8d7f1, #e6a0d4);
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ff66b2;
+  text-shadow: 0 0 8px rgba(255, 105, 135, 0.6);
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #f5c6e5;
+  margin-top: 10px;
+}
+
+.love-content {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(255, 105, 135, 0.8);
+  width: 80%;
+  max-width: 500px;
+  animation: fadeIn 2s ease-out;
+}
+
+.love-content h2 {
+  font-size: 2rem;
+  color: #ff66b2;
+  text-shadow: 0 0 8px rgba(255, 105, 135, 0.6);
+}
+
+.love-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.heart-container {
+  margin-top: 30px;
+  animation: pulseHeart 2s infinite ease-in-out;
+}
+
+.heart-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  animation: pulseHeart 1.5s infinite ease-in-out;
+}
+
+button {
+  margin-top: 30px;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff66b2, #ff1d62);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 105, 135, 0.6);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff1d62, #ff66b2);
+  box-shadow: 0 0 30px rgba(255, 105, 135, 0.8);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

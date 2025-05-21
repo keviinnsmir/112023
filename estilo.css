@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  background: #fff0f5;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas#hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.login-container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 50px 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 400px;
+  width: 90%;
+  color: #000;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 3px #ffd5e5;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff9eb3;
+  color: #000;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #aa7c8f;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -18px;
+  font-size: 12px;
+  color: #ff6f91;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff9eb3, #ff6f91);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 105, 135, 0.6);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9eb3);
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.8);
+}
+
+#error-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ff4d6d;
+  text-shadow: 0 0 5px #fff;
+}
