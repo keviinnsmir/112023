@@ -2,15 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página de Celeste ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Celeste 💖</title>
   <link rel="stylesheet" href="estilo2.css" />
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="dashboard">
-    <h1>Bienvenida, Celeste 💖</h1>
-    <p>Este es tu espacio privado, lleno de amor y sorpresas.</p>
-    <p>Te amo más cada día, mi amor.</p>
-  </div>
+  <header class="header">
+    <h1>Hola mi Celeste 💗</h1>
+    <p>Un espacio solo para ti, con amor.</p>
+  </header>
+
+  <section class="countdown">
+    <h2>⏳ Faltan para vernos:</h2>
+    <div class="countdown-box">
+      <div class="unit"><span id="days">0</span><p>días</p></div>
+      <div class="unit"><span id="hours">0</span><p>horas</p></div>
+      <div class="unit"><span id="minutes">0</span><p>minutos</p></div>
+      <div class="unit"><span id="seconds">0</span><p>segundos</p></div>
+    </div>
+  </section>
+
+  <section class="calendar">
+    <h2>📅 Nuestra historia</h2>
+    <div id="calendar"></div>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Nuestros Momentos</h2>
+    <div class="photos">
+      <img src="IMG_4196.PNG" alt="Nosotros">
+      <img src="IMG_6518.JPG" alt="Un día especial">
+    </div>
+  </section>
+
+  <section class="videos">
+    <h2>🎥 Un Mensaje</h2>
+    <video controls>
+      <source src="IMG_3767.MOV" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </section>
+  <section class="videos">
+    <h2>🎥 Un Mensaje</h2>
+    <video controls>
+      <source src="IMG_E7189.MOV" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </section>
+  <section class="letter">
+    <h2>💌 Carta para ti</h2>
+    <p>
+      Amor mío, sé que pronto estaremos juntos. Esta página es solo un rincón de todo lo que siento por ti.
+      Te amo y te espero con todo mi corazón. 💖
+    </p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Hecho con ❤️ por tu persona favorita</p>
+      <a href="https://wa.me/34603200736" target="_blank">💬 Escríbeme</a>
+    </div>
+    <p class="copy">© 2025 Solo para Celeste 🌙</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+  <script src="script3.js"></script>
 </body>
 </html>
