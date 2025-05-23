@@ -21,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         if (userFound.role === "admin") {
           window.location.href = "admin-dashboard.html";
         } else {
-          window.location.href = "celeste-dashboard.html";
+          window.location.href = "celeste.html";
         }
       }, 1500);
     } else {
